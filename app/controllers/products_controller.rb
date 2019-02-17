@@ -3,7 +3,8 @@ class ProductsController < ApplicationController
 
   # GET /products
   def index
-    @products = Product.all
+    all_products = Product.all
+    @products = ProductDecorator.decorate_collection(all_products)
   end
 
   # GET /products/1

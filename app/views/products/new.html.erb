@@ -1,5 +1,2 @@
-<h1>New Product</h1>
-
-<%= render 'form', product: @product %>
-
-<%= link_to 'Back', products_path %>
+<%= render section_header, custom_text: new_resource_name  %>
+<%= render 'form', resource: @product %>

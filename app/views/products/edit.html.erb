@@ -1,6 +1,2 @@
-<h1>Editing Product</h1>
-
-<%= render 'form', product: @product %>
-
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+<%= render section_header, custom_text: edit_resource_name  %>
+<%= render 'form', resource: @product %>

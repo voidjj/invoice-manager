@@ -1,9 +1,14 @@
 <nav class="navbar navbar-expand-lg bg-light border-bottom box-shadow"">
   <div class="container">
-    <a class="navbar-brand" href="index.html">LoGo</a>
-    <div class="collapse navbar-collapse" id="probootstrap-navbar">
+    <a class="navbar-brand">Welcome</a>
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Products", products_path, class: "nav-link" %>
+        </li>
       </ul>
     </div>
   </div>

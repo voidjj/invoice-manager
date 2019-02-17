@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table table-striped table-bordered ">
   <thead>
     <tr>
       <% attr_names.each do |attr| %>
@@ -17,13 +17,13 @@
         <% end %>
         <td>
           <div class="btn-group float-right" role="group">
-            <% if show %>
+            <% if defined? show && show %>
               <%= button_to "Show", model,  method: :get, class: "btn btn-primary" %>
             <% end %>
-            <% if edit %>
+            <% if defined? edit && edit%>
               <%= button_to "Edit", edit_polymorphic_path(model),  method: :get, class: "btn btn-info" %>
             <% end %>
-            <% if delete %>
+            <% if defined? delete && delete %>
               <%= button_to "Delete", model,  method: :delete, class: "btn btn-danger" %>
             <% end %>
           </div>
