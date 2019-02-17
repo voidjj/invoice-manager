@@ -1,5 +1,5 @@
 module RenderHelper
-  #TODO: need refactoring
+  # TODO: need refactoring
   HEADER_PATH = "layouts/shared/header"
   RESOURCE_TABLE_PATH = "layouts/shared/resource-table"
   SECTION_HEADER_PATH = "layouts/shared/section-header"
