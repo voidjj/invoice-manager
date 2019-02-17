@@ -58,6 +58,7 @@ group :development do
   gem "rubocop-rails_config"
   gem "rubocop", require: false
   gem "rails_best_practices", require: false
+  gem "pry-rails"
 end
 
 group :test do
