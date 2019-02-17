@@ -38,7 +38,10 @@ gem "turbolinks", "~> 5"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "simple_form"
 gem "draper"
+gem "high_voltage", "~> 3.1"
+
 gem "bootstrap", "~> 4.2.1"
+gem "jquery-rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
