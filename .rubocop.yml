@@ -21,7 +21,7 @@ Documentation:
 
 LineLength:
   Enabled: true
-  Max: 120
+  Max: 160
 
 MethodLength:
   CountComments: false
