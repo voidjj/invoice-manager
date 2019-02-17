@@ -1,0 +1,34 @@
+<table class="table">
+  <thead>
+    <tr>
+      <% attr_names.each do |attr| %>
+        <th scope="col"><%= attr %></th>
+      <% end %>
+      <th scope="col">
+        <div class="float-right">Action</div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% collection.each do |model| %>
+      <tr>
+        <% attrs.each do |attr| %>
+          <td><%= model.instance_eval(attr) %></td>
+        <% end %>
+        <td>
+          <div class="btn-group float-right" role="group">
+            <% if show %>
+              <%= button_to "Show", model,  method: :get, class: "btn btn-primary" %>
+            <% end %>
+            <% if edit %>
+              <%= button_to "Edit", edit_polymorphic_path(model),  method: :get, class: "btn btn-info" %>
+            <% end %>
+            <% if delete %>
+              <%= button_to "Delete", model,  method: :delete, class: "btn btn-danger" %>
+            <% end %>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
