@@ -1,26 +1,26 @@
-module ProductsHelper
+module CategoriesHelper
   # TODO: need refactoring
   def new_resource_name
-    "New product"
+    "New category"
   end
 
   def edit_resource_name
-    "Edit product"
+    "Edit category"
   end
 
   def resource
-    Product
+    Category
   end
 
   def page_title
-    "Products"
+    "Categories"
   end
 
   def attr_names
-    ["Name", "Description"]
+    ["Name"]
   end
 
   def attrs
-    ["name", "description"]
+    ["name"]
   end
 end
