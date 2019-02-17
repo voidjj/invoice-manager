@@ -19,10 +19,6 @@ ClassLength:
 Documentation:
   Enabled: false
 
-LineLength:
-  Enabled: true
-  Max: 160
-
 MethodLength:
   CountComments: false
   Max: 10
@@ -35,9 +31,6 @@ TrailingWhitespace:
   Enabled: true
 
 Style/BlockComments:
-  Enabled: false
-
-Style/FileName:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
